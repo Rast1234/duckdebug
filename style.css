@@ -1,0 +1,17 @@
+.center-wrapper {
+	text-align: center;
+}
+.center {
+	display: inline-block;
+}
+
+#duck-image {width: 100px;}
+#chat-wrapper {
+	width: 70%;
+	float: left;
+	}
+#chat {
+	
+	}
+#duck {width: 20%; float: left;}
+#message-box {}
