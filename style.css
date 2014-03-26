@@ -1,17 +1,52 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    font-size: 150%;
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0px;
+}
 .center-wrapper {
 	text-align: center;
 }
 .center {
 	display: inline-block;
 }
-
-#duck-image {width: 100px;}
+#duck-image {
+    width: 120px;
+}
 #chat-wrapper {
 	width: 70%;
+    height: 100%;
 	float: left;
 	}
 #chat {
-	
+    height: 100%;
+    padding: 1em;
 	}
-#duck {width: 20%; float: left;}
-#message-box {}
+#duck {
+    width: 20%;
+    float: left;
+    font-size: 150%
+}
+#log-wrapper {
+    height: 80%;
+    padding-bottom: 0.5em;
+}
+#log {
+    padding: 10px;
+    background-color: lightgrey;
+    height: 100%;
+    border-radius: 10px;
+}
+#message-box {
+    font-size: 100%;
+    overflow: hidden;
+    height: 20%;
+    border-radius: 7px;
+}
