@@ -44,6 +44,7 @@ body {
     height: 100%;
     border-radius: 10px;
     overflow-y: auto;
+    overflow-x: auto;
 }
 #message-box {
     font-size: 100%;
@@ -57,6 +58,7 @@ body {
     clear: both;
     margin: 0.1em;
     padding: 0.7em;
+    white-space: pre-wrap;
 }
 .message-human {
     float: left;
