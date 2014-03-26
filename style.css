@@ -43,10 +43,28 @@ body {
     background-color: lightgrey;
     height: 100%;
     border-radius: 10px;
+    overflow-y: auto;
 }
 #message-box {
     font-size: 100%;
     overflow: auto;
     height: 20%;
     border-radius: 7px;
+}
+.message {
+    border-radius: 5px;
+    width: auto;
+    clear: both;
+    margin: 0.1em;
+    padding: 0.7em;
+}
+.message-human {
+    float: left;
+    text-align: left;
+    background-color: lightblue;
+}
+.message-duck {
+    float: right;
+    text-align: right;
+    background-color: yellow;
 }
