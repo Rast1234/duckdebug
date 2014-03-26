@@ -89,8 +89,8 @@ function Chat(input, log) {
             "I will try to help you in difficult situations like debugging.\n" +
             "Share your thoughts<i>*</i> with <b>Ctrl+Enter</b>.\n" +
             "Read more about rubber ducks on wiki:\n" +
-            "<a href='http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D1%83%D1%82%D1%91%D0%BD%D0%BA%D0%B0'>Метод Утёнка</a>\n" +
-            "<a href='http://en.wikipedia.org/wiki/Rubber_duck_debugging\n\n'>Rubber duck debugging</a>\n\n" +
+            "<a href='http://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4_%D1%83%D1%82%D1%91%D0%BD%D0%BA%D0%B0' target='_blank'>Метод Утёнка</a>\n" +
+            "<a href='http://en.wikipedia.org/wiki/Rubber_duck_debugging\n\n' target='_blank'>Rubber duck debugging</a>\n\n" +
             "<i>*Don't hesitate, history is in your Local Storage.\n" +
             "If you want, check <a href='https://github.com/Rast1234/duckdebug/tree/gh-pages'>source code!</a> ;)</i>";
         var replic = Message(text, false);
