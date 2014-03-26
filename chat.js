@@ -51,7 +51,7 @@ function Chat(input, log) {
         for(var i=0; i<localStorage.length; i++) {
             var item = JSON.parse(localStorage.getItem(i));
             var message = Message(item.text, item.isHuman);
-            log.append(message);
+            appendMessage(message);
         }
     }
 
@@ -68,16 +68,22 @@ function Chat(input, log) {
         if(text == "")
             return;
         var message = Message(text, true);
-        log.append(message);
+        appendMessage(message);
         input.val('');
         storeHistory(text, true);
 
         var reply = duck.TryQuack();
         if(reply) {
             var replic = Message(reply, false);
-            log.append(replic);
+            appendMessage(replic);
             storeHistory(reply, false);
         }
+    }
+
+    function appendMessage(message) {
+        log.append(message);
+        var l = log.get(0);
+        l.scrollTop = l.scrollHeight;
     }
 
     function sendHandler(evt) {
