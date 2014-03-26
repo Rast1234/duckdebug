@@ -46,7 +46,7 @@ body {
 }
 #message-box {
     font-size: 100%;
-    overflow: hidden;
+    overflow: auto;
     height: 20%;
     border-radius: 7px;
 }
